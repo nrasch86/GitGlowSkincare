@@ -1,0 +1,1 @@
+/**A form component for inputting skills, perhaps for user profiles or product details. */

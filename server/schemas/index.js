@@ -1,0 +1,1 @@
+// The entry point for GraphQL schema definitions.

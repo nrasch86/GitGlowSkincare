@@ -1,0 +1,1 @@
+//**The entry point for the React application, where the App component is rendered. */
