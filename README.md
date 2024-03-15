@@ -1,2 +1,45 @@
-# GitGlowSkincare
-This repository is used to house the code for the Columbia Bootcamp Project 3 Assignment 
+# GitGlow Skincare E-Commerce Platform
+
+## Description
+
+
+
+## User Story
+
+
+
+## Features
+
+
+## Technologies Used
+
+
+
+## Installation
+
+To run this application locally:
+
+
+
+## Usage
+
+
+## Deployment
+
+
+## Screenshot
+
+
+
+
+
+
+## Credits
+
+Developed by @nrasch86 , @evan17812 , @ bladeasf , @Justin-Garcia
+
+## License
+
+This project is licensed under the MIT License.
+
+Copyright (c) 2024 nrasch86
