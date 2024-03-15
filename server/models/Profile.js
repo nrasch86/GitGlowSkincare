@@ -1,0 +1,1 @@
+//The Mongoose model for user profiles or other entities.
