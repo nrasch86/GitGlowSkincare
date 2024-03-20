@@ -1,1 +1,0 @@
-/**A component to display a list of skills or product attributes. */
