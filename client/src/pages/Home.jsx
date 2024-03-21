@@ -1,12 +1,11 @@
 //**The main landing page of the site. */
 import { useQuery } from "@apollo/client";
 import ProductList from "../components/ProductList";
+import ProductReviews from "../components/Product Reviews";
 import { QUERY_PRODUCTS } from "..utils/queries";
+import { QUERY_REVIEWS } from "..utils/queries";
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_PRODUCTS);
-  const products = data?.products || [];
-
   return (
     <main>
       <div /* className = 'container' */>
@@ -24,7 +23,7 @@ const Home = () => {
               <div /* className = 'product shot grid' */></div>
             </div>
             <div /* className = 'magazine logos' */>
-            <ul>
+              <ul>
                 <li>
                   <img src="" alt="randomMagazine 1" />
                   <img src="" alt="randomMagazine 2" />
@@ -36,7 +35,7 @@ const Home = () => {
               <ProductList />
             </div>
             <div /* className = 'reviews section' */>
-             <ReviewList />
+              <ProductReviews />
             </div>
           </>
         )}
