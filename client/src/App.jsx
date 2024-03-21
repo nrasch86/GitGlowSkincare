@@ -2,6 +2,21 @@
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import { Spinner } from "react-bootstrap";
+import { Outlet } from 'react-router-dom';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
+
+import Nav from './components/Nav';
+import { StoreProvider } from './utils/GlobalState';
+
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
 
 function App() {
     const [preload, setPreload] = useState(true);
