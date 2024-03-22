@@ -1,1 +1,5 @@
 /* The base CSS file, with resets or global styles.*/
+:root {
+    ff-primary: ;
+    ff-secondary: ;
+}
