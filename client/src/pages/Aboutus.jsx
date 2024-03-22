@@ -21,4 +21,4 @@ a brighter, smoother complexion with GitGlow, where innovation and skincare unit
 </div>
 </Container>
 </>
-export default Aboutus;
+export default AboutUs;
