@@ -1,1 +1,0 @@
-/**A component to display  product attributes. */
