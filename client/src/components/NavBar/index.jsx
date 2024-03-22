@@ -1,7 +1,7 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
-import "./components/NavTop.css";
+import "./index.css";
 
 
 function NavTop() {

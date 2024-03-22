@@ -1,7 +1,8 @@
 import { Container } from 'react-bootstrap';
 //import { useState } from 'react';//
 
-
+const AboutUs = () => {
+  return (
 <>
 <Container fluid className="about-wrapper">
 <div className="aboutus">
@@ -21,4 +22,7 @@ a brighter, smoother complexion with GitGlow, where innovation and skincare unit
 </div>
 </Container>
 </>
+  );
+};
+
 export default AboutUs;

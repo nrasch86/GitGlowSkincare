@@ -1,11 +1,14 @@
 //**The main landing page of the site. */
 import { useQuery } from "@apollo/client";
 import ProductList from "../components/ProductList";
-import ProductReviews from "../components/Product Reviews";
-import { QUERY_PRODUCTS } from "..utils/queries";
-import { QUERY_REVIEWS } from "..utils/queries";
+import ProductReviews from "../components/ProductReviews";
+// import { QUERY_PRODUCTS } from "..utils/queries";
+// import { QUERY_REVIEWS } from "..utils/queries";
 
 const Home = () => {
+  const loading = false;
+  // const { loading, data } = useQuery(QUERY_PROFILES);
+  // const profiles = data?.profiles || [];
   return (
     <main>
       <div /* className = 'container' */>
