@@ -11,7 +11,8 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
-import NavTop from "./components/NavBar";
+import NavTop from "./components/NavTop";
+import Footer from "./components/Footer"
 // import { StoreProvider } from './utils/GlobalState';
 
 const httpLink = createHttpLink({
@@ -34,7 +35,9 @@ const client = new ApolloClient({
 function App() {
   return (
     <div>
+        <NavTop />
       <Outlet />
+      <Footer />
     </div>
   );
 }

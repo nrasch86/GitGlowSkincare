@@ -19,13 +19,13 @@ const Home = () => {
             <div /* className = 'banner section styling' */>
               <img></img>
             </div>
-            <div /* className = 'hero section' */>
-              <div /* className = 'product shot grid' */></div>
-              <div /* className = 'product shot grid' */></div>
-              <div /* className = 'product shot grid' */></div>
-              <div /* className = 'product shot grid' */></div>
+            <div className="productGrid">
+              <div /* className = 'product shot grid' */><img src="./" alt=""></img></div>
+              <div /* className = 'product shot grid' */><img src="./" alt=""></img></div>
+              <div /* className = 'product shot grid' */><img src="./" alt=""></img></div>
+              <div /* className = 'product shot grid' */><img src="./" alt=""></img></div>
             </div>
-            <div /* className = 'magazine logos' */>
+            <div className="magazineLogo">
               <ul>
                 <li>
                   <img src="" alt="randomMagazine 1" />

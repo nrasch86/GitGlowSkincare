@@ -57,7 +57,7 @@ function NavTop() {
                 </Link>
               </Navbar.Brand>
               <button className="toogle-menu" onClick={toogleOpen}>
-                <FaAlignRight />
+                {/* <FaAlignRight /> */}
               </button>
               <Nav className="navtop-list">
                 <Nav.Link className="pe-3">
