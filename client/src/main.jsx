@@ -5,6 +5,7 @@ import './index.css'
 import NavTop from "./components/NavBar/index"
 import App from './App.jsx'
 import Home from './pages/Home';
+import ProductPage from './pages/ProductPage'
 import AboutUs from './pages/AboutUs';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
@@ -37,6 +38,9 @@ const router = createBrowserRouter([
       {
         path: '/Cart',
         element: <Cart />
+      } , {
+        path: '/product/:productID',
+        element: <ProductPage />
       }
     ]
   }
