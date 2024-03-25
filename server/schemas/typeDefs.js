@@ -1,4 +1,3 @@
-//GraphQL type definitions for your data models.
 const typeDefs = `
 type User {
     _id: ID
@@ -19,8 +18,7 @@ type Product {
     name: String
     description: String
     image: String
-  price: Float
-  quantity: Int
+    price: Float
     Reviews: [Review]
 }
 
@@ -54,12 +52,12 @@ type Mutation {
     addOrder(products: [ID]!): Order
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     login(email: String!, password: String!): Auth
-    // ----------------------------------------------------------------- //
     addProduct(name: String!, description: String!): Product
     addReview(productID: ID!, rating: Int!, reviewText: String!): Product
     updateProduct(_id: ID!, quantity: Int!): Product
     removeProduct(productID: ID!): Product
     removeReview(productID: ID!, reviewID: ID!): Product
 }
+`;
 
-`
+module.exports = typeDefs;
