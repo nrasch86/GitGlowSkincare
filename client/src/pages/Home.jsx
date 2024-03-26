@@ -17,7 +17,7 @@ const Home = () => {
         ) : (
           <>
             <div /* className = 'banner section styling' */>
-              <img></img>
+              <p>SALE</p>
             </div>
             <div className="productGrid">
               <div /* className = 'product shot grid' */><img src="./" alt=""></img></div>
