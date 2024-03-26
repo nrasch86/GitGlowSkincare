@@ -28,16 +28,16 @@ function NavTop() {
                   <NavLink to="/" onClick={toogleClose}>
                     Home
                   </NavLink>
-                  <NavLink to="/Login" onClick={toogleClose}>
+                  <NavLink to="/login" onClick={toogleClose}>
                     Login
                   </NavLink>
-                  <NavLink to="/Signup" onClick={toogleClose}>
+                  <NavLink to="/signup" onClick={toogleClose}>
                     Signup
                   </NavLink>
-                  <NavLink to="/Profile" onClick={toogleClose}>
+                  <NavLink to="/profile" onClick={toogleClose}>
                     Profile
                   </NavLink>
-                  <NavLink to="/Aboutus" onClick={toogleClose}>
+                  <NavLink to="/aboutus" onClick={toogleClose}>
                     About Us
                   </NavLink>
                 </div>
@@ -78,7 +78,7 @@ function NavTop() {
                 </Nav.Link>
                 <Nav.Link className="">
                   <NavLink
-                    to="/Signuo"
+                    to="/Signup"
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
                     Signup

@@ -2,7 +2,6 @@
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom/dist'
 import './index.css'
-// import NavTop from "./components/NavBar/index"
 import App from './App.jsx'
 import Home from './pages/Home';
 import ProductPage from './pages/ProductPage'
@@ -29,7 +28,7 @@ const router = createBrowserRouter([
         path: '/signup',
         element: <Signup />
       }, {
-        path: '/me',
+        path: '/profile',
         element: <Profile />
       }, {
         path: '/aboutus',
