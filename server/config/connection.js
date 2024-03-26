@@ -1,6 +1,19 @@
 //Configuration for the database connection.
-const mongoose = require('mongoose');
+const { MongoClient } = require('mongodb');
+let dbConnection
+let uri = "mongodb+srv://admin:admin123@gitglow.wlti1oa.mongodb.net/?retryWrites=true&w=majority&appName=GitGlow"
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/GitGlowDB');
-
-module.exports = mongoose.connection;
+module.exports = {
+    connectToDb: (cb) => {
+        MongoClient.connect(uri)
+        .then((client) => {
+            dbConnection = client.db()
+            return cb()
+        })
+        . catch(err => {
+            console.log(err)
+            return cb(err)
+        })
+    },
+    getDb: () => dbConnection
+}
