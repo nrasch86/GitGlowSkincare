@@ -13,6 +13,18 @@ export const QUERY_PRODUCTS = gql`
 }
 `;
 
+export const QUERY_SINGLE_PRODUCT = gql`
+query singleProduct($productId: ID!) {
+    product(productId: $productId) {
+      _id
+      name
+      image
+      description
+      price
+    }
+  }
+`;
+
 export const QUERY_USER = gql`
 { 
     user {
