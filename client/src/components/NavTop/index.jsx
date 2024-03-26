@@ -53,7 +53,7 @@ function NavTop() {
             <Container fluid className="px-4">
               <Navbar.Brand className="navtop-brand">
                 <Link to="/">
-                  GIt<i id="normal"> Glow</i>.
+                  Git<i id="normal"> Glow</i>.
                 </Link>
               </Navbar.Brand>
               <button className="toogle-menu" onClick={toogleOpen}>
@@ -78,7 +78,7 @@ function NavTop() {
                 </Nav.Link>
                 <Nav.Link className="">
                   <NavLink
-                    to="/Signuo"
+                    to="/Signup"
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
                     Signup

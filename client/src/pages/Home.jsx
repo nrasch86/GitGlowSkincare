@@ -28,7 +28,7 @@ const Home = () => {
             <div className="magazineLogo">
               <ul>
                 <li>
-                  <img src="" alt="randomMagazine 1" />
+                  <img src="./assets/" alt="randomMagazine 1" />
                   <img src="" alt="randomMagazine 2" />
                   <img src="" alt="randomMagazine 3" />
                 </li>
