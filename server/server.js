@@ -1,5 +1,6 @@
 // Server Connections
 const express = require('express');
+require("dotenv").config();
 const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
 const path = require('path');
