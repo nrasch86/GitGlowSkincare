@@ -4,8 +4,6 @@ import img1 from "../assets/Prodimg1.png"
 import img2 from "../assets/Prodimg2.png"
 import img3 from "../assets/Prodimg3.png"
 import img4 from "../assets/Prodimg4.png"
-
-
 import "../CSS/Home.css"
 
 
