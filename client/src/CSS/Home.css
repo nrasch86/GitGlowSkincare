@@ -33,19 +33,44 @@
 
 .productGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template:
+    "1 2"
+    "3 4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
     padding: 1rem;
 }
 
 .prodimg {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
 .prodimg > img {
+<<<<<<< HEAD
+    width: 20vw;
+}
+
+#grid1 {
+    grid-area: 1;
+}
+
+#grid2 {
+    grid-area: 2;
+}
+
+#grid3 {
+    grid-area: 3;
+}
+
+#grid4 {
+    grid-area: 4;
+=======
     width: 15vw;
     border-radius: 15px;
+>>>>>>> acf0ffc4e4805fe35095be4ee90700bc1d50a593
 }
 
 .reviewSection > ul {
