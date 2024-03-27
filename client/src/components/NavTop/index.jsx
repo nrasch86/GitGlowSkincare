@@ -1,6 +1,7 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
+import logoimg from "../../assets/LOGO.png"
 import "./index.css";
 
 
@@ -52,8 +53,9 @@ function NavTop() {
           <Navbar className="navtop" expand="lg">
             <Container fluid className="px-4">
               <Navbar.Brand className="navtop-brand">
-                <Link to="/">
+                <Link to="/" >
                 <i id="normal"> Git Glow</i>
+              <div className="logo-container" > <img src={logoimg} alt="Logo" className="logo-image" /> </div>
                 </Link>
               </Navbar.Brand>
               <button className="toogle-menu" onClick={toogleOpen}>
