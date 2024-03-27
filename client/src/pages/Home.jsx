@@ -24,15 +24,19 @@ const Home = () => {
             <div className="productGrid">
               <div className = 'prodimg'>
                 <img src={img1} alt="" id="grid1"></img>
+                <button className="cartbutton">Add to Cart</button>
               </div>
               <div className = 'prodimg'>
                 <img src={img2} alt="" id="grid2"></img>
+                <button className="cartbutton">Add to Cart</button>
               </div>
               <div className = 'prodimg'>
                 <img src={img3} alt="" id="grid3"></img>
+                <button className="cartbutton">Add to Cart</button>
               </div>
               <div className = 'prodimg'>
                 <img src={img4} alt="" id="grid4"></img>
+                <button className="cartbutton">Add to Cart</button>
               </div>
             </div>
             <div className="magazineLogo">
