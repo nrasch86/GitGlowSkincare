@@ -5,9 +5,10 @@
     --ff-text: 'Montserrat', san-serif;
 
     --clr-neutral-000: white;
+    --clr-neutral-150: hsl(0, 0%, 98%);
     --clr-neutral-300: hsl(0, 0%, 90%);
     --clr-neutral-450: hsl(0, 0%, 70%);
-    --clr-neutral-600: hsl(0, 0%, 40%);
+    --clr-neutral-600: hsl(0, 0%, 50%);
     --clr-neutral-900: black;
     --clr-bg: hsl(150, 39%, 71%); /* soft mint green for main background color*/
     --clr-cta: hsl(208, 55%, 80%); /*soft blue for buttons*/
@@ -15,21 +16,50 @@
     --clr-alert: hsl(274, 76%, 58%); /* striking purple for alert notifs*/
 }
 
+.banner {
+    background-color: var(--clr-bg);
+    height: 10vw;
+}
+
+.banner > h1 {
+    font-size: 3rem;
+    font-family: var(--ff-primary);
+    color: var(--clr-neutral-900);
+    text-align: center;
+}
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.prodimg {
+    display: flex;
+    flex-direction: row;
+}
+
+.prodimg > img {
+    width: 15vw;
+}
+
 .reviewSection > ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
-
+background-color: var(--clr-section-bg);
 }
 
 .review {
     list-style: none;
     font-family: var(--ff-text);
-    background-color: var(--clr-bg);
-    border-radius: 10px;
-    border: 2px solid var(--clr-cta);
+    background-color: var(--clr-neutral-150);
+    border-radius: 5px;
     width: 30vw;
+    padding: 5px;
+    box-shadow: 5px 5px 5px var(--clr-neutral-600);
 }
 
 .review > span {

@@ -1,8 +1,10 @@
 //**The main landing page of the site. */
-import { useQuery } from "@apollo/client";
 import ProductList from "../components/ProductList";
-// import { QUERY_PRODUCTS } from "..utils/queries";
-// import { QUERY_REVIEWS } from "..utils/queries";
+import img1 from "../assets/Prodimg1.png"
+import img2 from "../assets/Prodimg2.png"
+import img3 from "../assets/Prodimg3.png"
+import img4 from "../assets/Prodimg4.png"
+
 
 import "../CSS/Home.css"
 
@@ -18,21 +20,21 @@ const Home = () => {
           <div /* className = skeleton */>Loading...</div>
         ) : (
           <>
-            <div /* className = 'banner section styling' */>
-              <p>SALE</p>
+            <div className = 'banner'>
+              <h1>S A L E</h1>
             </div>
             <div className="productGrid">
-              <div /* className = 'product shot grid' */>
-                <img src="./" alt=""></img>
+              <div className = 'prodimg grid1'>
+                <img src={img1} alt=""></img>
               </div>
-              <div /* className = 'product shot grid' */>
-                <img src="./" alt=""></img>
+              <div className = 'prodimg grid2'>
+                <img src={img2} alt=""></img>
               </div>
-              <div /* className = 'product shot grid' */>
-                <img src="./" alt=""></img>
+              <div className = 'prodimg grid3'>
+                <img src={img3} alt=""></img>
               </div>
-              <div /* className = 'product shot grid' */>
-                <img src="./" alt=""></img>
+              <div className = 'prodimg grid4'>
+                <img src={img4} alt=""></img>
               </div>
             </div>
             <div className="magazineLogo">
@@ -50,14 +52,14 @@ const Home = () => {
             <div className="reviewSection">
               <ul>
                 <li className="review">
-                  <span>Kat</span><br/> After coding for hours, my skin was dry
+                  <span>Kat ⭐⭐⭐⭐⭐</span><br/> After coding for hours, my skin was dry
                   and tired. Silky Smooth Shea Butter Body Lotion saved the day!
                   It's like a mini spa session, leaving my skin soft and
                   rejuvenated. Love it!
                 </li>
-                <li className="review"><span>Evan</span><br/>
+                <li className="review"><span>Evan ⭐⭐⭐⭐⭐</span><br/>
 Silky Smooth Shea Butter Body Lotion is my go-to after coding marathons. It hydrates and nourishes my skin, making it feel amazing. Highly recommend!</li>
-                <li className="review"><span>Nikki</span><br/>
+                <li className="review"><span>Nikki ⭐⭐⭐⭐⭐</span><br/>
 After long coding nights, my tired eyes needed help. Revitalizing Vitamin C Eye Serum is my go-to solution. It banishes dark circles and puffiness, leaving me looking awake and refreshed. A must-have for any coder!</li>
               </ul>
             </div>

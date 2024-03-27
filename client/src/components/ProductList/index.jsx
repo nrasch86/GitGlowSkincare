@@ -10,29 +10,12 @@ const ProductList = () => {
                 <div>
                     <p>Product Description</p>
                 </div>
-                <Link to="/products/1">
+                <Link to="/products/product:_id">
                     {/* <img src={product.image} alt={product.name} /> */}
                 </Link>
             </div>
         </div>
       )};
-    // return (<div>
-        {/* <h3>{productName}</h3>
-        {products &&
-          products.map((product) => (
-            <div key={product._id}>
-              <div>
-                <p>{product.description}</p>
-              </div>
-              <Link
-                to={`/products/${product._id}`}
-              >
-                
-              </Link>
-            </div>
-          ))} */}
-
-    //   </div>);
-// }
+   
 
 export default ProductList;
