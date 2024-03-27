@@ -34,7 +34,10 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-function App() {
+const App = () => {
+
+
+  
   return (
     <ApolloProvider client={client}>
     <div>

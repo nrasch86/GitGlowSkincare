@@ -10,6 +10,7 @@ import {
 } from "./actions";
 
 const StoreContext = createContext();
+console.log(StoreContext);
 const { Provider } = StoreContext;
 
 const reducer = (state, action) => {
