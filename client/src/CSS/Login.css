@@ -1,0 +1,74 @@
+/* login.css */
+.LoginWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    background-image: url('../assets/SignLogBackground.png');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+  }
+  
+  .LoginContainer {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white for readability */
+    width: 300px;
+  }
+  
+  .LoginTitle {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .Input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #a7c4bc;
+    background-color: #e7eff6;
+  }
+  
+  .LoginButton, .SignUpButton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added for a slight 3D effect */
+  }
+  
+  .LoginButton {
+    background-color: #ec7092; /* A deeper pink for more solidity */
+    color: #ffffff; /* White text for better readability */
+  }
+  
+  .SignUpButton {
+    background-color: #6baed8; /* A deeper blue for more solidity */
+    color: #ffffff; /* White text for better readability */
+  }
+  
+  
+  .bg-danger {
+    background-color: #f7786b;
+  }
+  
+  .my-3 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .p-3 {
+    padding: 1rem !important;
+  }
+  
+  .text-white {
+    color: #fff !important;
+  }
+  
