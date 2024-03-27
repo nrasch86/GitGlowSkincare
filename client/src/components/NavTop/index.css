@@ -5,7 +5,7 @@
 
 .navtop-brand a {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 28px !important;
+    font-size: 3rem !important;
     font-weight: 600;
     color: #000;
     text-decoration: none;
@@ -23,13 +23,20 @@ i#normal {
     padding: 20px;
 }
 
+.navtop-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
 .navtop-list a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.6);
     padding: 5px;
-    margin: 50px 60px 50px 60px;
-    white-space: nowrap;
+    font-size: 1.25rem;
 }
 
 .active {

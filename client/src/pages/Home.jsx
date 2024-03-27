@@ -24,17 +24,17 @@ const Home = () => {
               <h1>S A L E</h1>
             </div>
             <div className="productGrid">
-              <div className = 'prodimg grid1'>
-                <img src={img1} alt=""></img>
+              <div className = 'prodimg'>
+                <img src={img1} alt="" id="grid1"></img>
               </div>
-              <div className = 'prodimg grid2'>
-                <img src={img2} alt=""></img>
+              <div className = 'prodimg'>
+                <img src={img2} alt="" id="grid2"></img>
               </div>
-              <div className = 'prodimg grid3'>
-                <img src={img3} alt=""></img>
+              <div className = 'prodimg'>
+                <img src={img3} alt="" id="grid3"></img>
               </div>
-              <div className = 'prodimg grid4'>
-                <img src={img4} alt=""></img>
+              <div className = 'prodimg'>
+                <img src={img4} alt="" id="grid4"></img>
               </div>
             </div>
             <div className="magazineLogo">
