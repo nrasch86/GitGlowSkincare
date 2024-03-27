@@ -1,13 +1,11 @@
 //**The main landing page of the site. */
 import ProductList from "../components/ProductList";
-import img1 from "../assets/Prodimg1.png"
-import img2 from "../assets/Prodimg2.png"
-import img3 from "../assets/Prodimg3.png"
-import img4 from "../assets/Prodimg4.png"
+import img1 from "../assets/Prodimg1.png";
+import img2 from "../assets/Prodimg2.png";
+import img3 from "../assets/Prodimg3.png";
+import img4 from "../assets/Prodimg4.png";
 
-
-import "../CSS/Home.css"
-
+import "../CSS/Home.css";
 
 const Home = () => {
   const loading = false;
@@ -20,21 +18,25 @@ const Home = () => {
           <div /* className = skeleton */>Loading...</div>
         ) : (
           <>
-            <div className = 'banner'>
+            <div className="banner">
               <h1>S A L E</h1>
             </div>
             <div className="productGrid">
-              <div className = 'prodimg'>
+              <div className="prodimg">
                 <img src={img1} alt="" id="grid1"></img>
+                <caption> Aloe Vera <br/> <strong>Rebalance</strong></caption>
               </div>
-              <div className = 'prodimg'>
+              <div className="prodimg">
                 <img src={img2} alt="" id="grid2"></img>
+                <caption> Aloe Vera <br/> <strong>Rebalance</strong></caption>
               </div>
-              <div className = 'prodimg'>
+              <div className="prodimg">
                 <img src={img3} alt="" id="grid3"></img>
+                <caption> Aloe Vera <br/> <strong>Rebalance</strong></caption>
               </div>
-              <div className = 'prodimg'>
+              <div className="prodimg">
                 <img src={img4} alt="" id="grid4"></img>
+                <caption> Aloe Vera <br/> <strong>Rebalance</strong></caption>
               </div>
             </div>
             <div className="magazineLogo">
@@ -52,15 +54,27 @@ const Home = () => {
             <div className="reviewSection">
               <ul>
                 <li className="review">
-                  <span>Kat ⭐⭐⭐⭐⭐</span><br/> After coding for hours, my skin was dry
-                  and tired. Silky Smooth Shea Butter Body Lotion saved the day!
-                  It's like a mini spa session, leaving my skin soft and
-                  rejuvenated. Love it!
+                  <span>Kat ⭐⭐⭐⭐⭐</span>
+                  <br /> After coding for hours, my skin was dry and tired.
+                  Silky Smooth Shea Butter Body Lotion saved the day! It's like
+                  a mini spa session, leaving my skin soft and rejuvenated. Love
+                  it!
                 </li>
-                <li className="review"><span>Evan ⭐⭐⭐⭐⭐</span><br/>
-Silky Smooth Shea Butter Body Lotion is my go-to after coding marathons. It hydrates and nourishes my skin, making it feel amazing. Highly recommend!</li>
-                <li className="review"><span>Nikki ⭐⭐⭐⭐⭐</span><br/>
-After long coding nights, my tired eyes needed help. Revitalizing Vitamin C Eye Serum is my go-to solution. It banishes dark circles and puffiness, leaving me looking awake and refreshed. A must-have for any coder!</li>
+                <li className="review">
+                  <span>Evan ⭐⭐⭐⭐⭐</span>
+                  <br />
+                  Silky Smooth Shea Butter Body Lotion is my go-to after coding
+                  marathons. It hydrates and nourishes my skin, making it feel
+                  amazing. Highly recommend!
+                </li>
+                <li className="review">
+                  <span>Nikki ⭐⭐⭐⭐⭐</span>
+                  <br />
+                  After long coding nights, my tired eyes needed help.
+                  Revitalizing Vitamin C Eye Serum is my go-to solution. It
+                  banishes dark circles and puffiness, leaving me looking awake
+                  and refreshed. A must-have for any coder!
+                </li>
               </ul>
             </div>
           </>
