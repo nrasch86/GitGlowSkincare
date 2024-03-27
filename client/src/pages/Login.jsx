@@ -17,12 +17,13 @@ useEffect(()=>{
 
 }, [data, navigate])
 
-    const handleLogin = async (e) => {
-      e.preventDefault();
-
+    const handleLogin = async (event) => {
+      event.preventDefault();
       try {
-        const { data } = await login({variables: {email: email, password: password}}); 
- 
+        const { data } = await login({
+          variables: {email: email, password: password}}); 
+  
+
         Auth.login(data.login.token);
         
       } catch (error) {
@@ -30,6 +31,7 @@ useEffect(()=>{
       }
     };
   
+    
     const navigateToRegister = () => {
       navigate('/Signup');
     };

@@ -20,7 +20,8 @@ type Auth {
   }
 
 type Query {
-    user: [User]!
+    users: [User]!
+    user(_id: ID!): User
     products: [Product]!
 }
 
