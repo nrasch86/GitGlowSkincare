@@ -1,0 +1,76 @@
+.signup-container{
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 110px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  outline: none;
+  border-color: #a2c6ed;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6289b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0f3a68;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="Street"],
+input[type="city"],
+input[type="state"],
+input [type="zipcode"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="street"]:focus,
+input[type="city"]:focus,
+input[type="state"]:focus,
+input[type="zipcode"] {
+  outline: none;
+  border-color: #a2c6ed;
+}
