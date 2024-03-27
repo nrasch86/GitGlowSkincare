@@ -1,1 +1,0 @@
-//The main script to run the seeders and populate the database with initial data.
