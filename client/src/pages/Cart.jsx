@@ -1,56 +1,45 @@
-import { Container, Button  } from 'react-bootstrap';
-import React, { useState } from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCartShopping } from '@fortawesome/free-solid-svg-icons';
-import '../CSS/Cart.css'
-import ProductPage from './ProductPage'
-import Total from '../utils/index'
-
-
+import { Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import img1 from '../assets/Prodimg1.png';
+import img2 from '../assets/Prodimg2.png';
+import '../CSS/Cart.css';
+import './addtocart';
 const Cart = () => {
-    const [cartItems, setCartItems] = useState([]);
-  
-    const addToCart = (item) => {
-      setCartItems([...cartItems, item]);
-    };
-
-    const removeFromCart = (itemToRemove) => {
-      const updatedCart = cartItems.filter(item => item !== itemToRemove);
-      setCartItems(updatedCart);
-    };
-  
-
-    const calculateTotal = () => {
-      return cartItems.reduce((total, item) => total + item.price, 0);
-    };
-  
-
-    return (
-        <Container fluid className="cart-wrapper">
-<div className="header">
-  <h3>Cart</h3>
-  <div className = "cart"><FontAwesomeIcon icon={faCartShopping} /><p id= "count">2</p> 
-   </div>
-</div>
-<div class = "container">
-    <div id= "cartroot">
-        <ProductPage />
-    </div>
-    <div class= 'sidebar'>
-        <div class="head"><p>My Cart</p></div>    
-        <div id= "cartItem">
-        <p>Revitalizing Vitamin C Eye Serum</p>
-        <br/>
-        <p>Balancing Tea Tree & Green Tea Cleanser</p>
-        </div>
-        <div class = "foot">
-            <h3>Total</h3>
-            <h2 id= 'total'>44.98</h2>
-        </div>
-    </div>
-</div>
-</Container>
+   return (
+      <Container fluid className="cart-wrapper">
+          <div className="header">
+              <h3>Cart</h3>
+              <div className="cart"><FontAwesomeIcon icon="fa-solid fa-cart-shopping" /><p id="count">2</p></div>
+          </div>
+          <div className="container">
+              <div id="cartroot"></div>
+              <div className='sidebar'>
+                  <div className="head"><p>My Cart</p></div>
+                  <div id="cartItem">
+                      {/* Example items added to cart */}
+                      <div className="cart-item">
+                          <img src={img1} alt="Green Tea Cleanser" />
+                          <div className="item-description">
+                              <p>Green Tea Cleanser</p>
+                              <p>Price: $18.99</p>
+                          </div>
+                      </div>
+                        <div className="cart-item">
+                            <img src={img2} alt="Vitamin-C Eye Serum" />
+                            <div className="item-description">
+                                <p>Vitamin-C Eye Serum</p>
+                                <p>Price: $24.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="foot">
+                        <h3>Total</h3>
+                        <h2 id='total'>$43.98</h2>
+                    </div>
+                </div>
+            </div>
+        </Container>
     )
 };
-
 export default Cart;

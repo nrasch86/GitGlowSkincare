@@ -5,14 +5,12 @@
     font-family: 'poppins', 'sans-serif';
     font-size: 18px;
 }
-
 .cart-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
 .header{
     height: 80px;
     width: 70%;
@@ -24,14 +22,11 @@
     justify-content: space-between;
     padding: 15px;
 }
-
 .header .logo{
     font-size: 30px;
     font-weight: bold;
     color: white;
-
 }
-
 .cart{
     display:flex;
     background-color: white;
@@ -41,11 +36,9 @@
     border-radius: 3px;
     width: 80px;
 }
-
 .fa-solid{
-    color:var(--second-color)
+    color: var(--second-color);
 }
-
 .cart p{
     height: 22px;
     width: 22px;
@@ -56,21 +49,17 @@
     background-color: var(--second-color);
     color: white;
 }
-
 .container {
     display: flex;
     width: 70%;
     margin-bottom: 30px;
-
 }
-
 #cartroot{
     width: 60%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 20px;
 }
-
 .sidebar{
     width: 50%;
     border-radius: 5px;
@@ -79,7 +68,6 @@
     padding: 15px;
     text-align: center;
 }
-
 .head{
     background-color: var(--second-color);
     border-radius: 3px;
@@ -90,11 +78,24 @@
     display: flex;
     align-items: center;
 }
-
 .foot{
     display: flex;
     justify-content: space-between;
     margin: 20px 0px;
     padding: 10px 0px;
-    border-top:  1px solid #333;
+    border-top: 1px solid #333;
+}
+/* Styles for cart items */
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust spacing between items */
+}
+.cart-item img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between image and description */
+}
+.item-description p {
+    margin: 0; /* Remove margin for p tags inside the description */
 }
