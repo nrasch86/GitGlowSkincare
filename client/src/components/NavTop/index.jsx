@@ -3,6 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import logoimg from "../../assets/logo.png"
 import "./index.css";
+import {GrClose} from "react-icons/gr"
+import AuthService from "../../utils/auth";
 
 
 function NavTop() {
@@ -15,6 +17,8 @@ function NavTop() {
       function toogleClose() {
         setToogleMenu(false);
       }
+
+      const loggedIn = AuthService.loggedIn();
 
       if (toogleMenu) {
         return (
@@ -70,6 +74,8 @@ function NavTop() {
                     Home
                   </NavLink>
                 </Nav.Link>
+                {!loggedIn && (
+                  <>
                 <Nav.Link className="">
                   <NavLink
                     to="/Login"
@@ -86,6 +92,8 @@ function NavTop() {
                     Sign Up
                   </NavLink>
                 </Nav.Link>
+                </>
+                )}
                 <Nav.Link className="">
                   <NavLink
                     to="/cart"
