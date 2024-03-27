@@ -57,6 +57,8 @@
     font-size: 1.125rem;
     color: var(--clr-neutral-900);
     /* width: 10vw; */
+    width: 20vw;
+    border-radius: 10px;
 }
 
 #grid1 {
@@ -105,34 +107,14 @@
   font-size: 20px;
 }
 
-@media (max-width: 992px) {
-  .banner {
-    background-color: var(--clr-bg);
-    height: 20vw;
-    margin-top: 20px;
-  }
-
-  .banner > h1 {
-    font-size: clamp(1rem, 5vw, 3rem);
-  }
-  .productGrid {
-    grid-template:
-      "1"
-      "2"
-      "3"
-      "4";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 1rem;
-    padding: 1rem;
-    margin-left: 0;
-  }
-
-  .prodimg > img {
-    width: 40vw;
-  }
-
-  .review {
-    width: 80vw;
-  }
+button {
+    background-color: rgb(133, 215, 245) ;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: -50px;
+    margin-top: 30px;
 }

@@ -48,9 +48,7 @@ const Home = () => {
                 </li>
               </ul>
             </div>
-            <div /* className = 'shop Hero section' */>
-              <ProductList />
-            </div>
+           
             <div className="reviewSection">
               <ul>
                 <li className="review">
