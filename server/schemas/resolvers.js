@@ -7,8 +7,15 @@ const resolvers = {
         users: async () => {
             return User.find();
         },
-      user: async (parent, { userId }) => {
-        return User.findOne({ _id: userId });
+      user: async (parent, { username }) => {
+        return User.findOne({ _id: username });
+      },
+      me: async (parent, context) => {
+        console.log(context.user)
+        if (context.user) {
+          return User.findOne({ _id: context.user._id });
+        }
+        throw AuthenticationError;
       },
     },
   
@@ -20,8 +27,9 @@ const resolvers = {
         return { token, user };
       },
       login: async (parent, { email, password }) => {
+        console.log ("login:", email,password);
         const user = await User.findOne({ email });
-  
+  console.log ("Found user:", user);
         if (!user) {
           throw AuthenticationError
         }
@@ -31,8 +39,9 @@ const resolvers = {
         if (!correctPw) {
           throw AuthenticationError
         }
-  
+  console.log ("authenticated");
         const token = signToken(user);
+  console.log("TOKEN:", token);
         return { token, user };
       },
   

@@ -35,14 +35,11 @@ function NavTop() {
                   <NavLink to="/signup" onClick={toogleClose}>
                     Signup
                   </NavLink>
-                  <NavLink to="/profile" onClick={toogleClose}>
-                    Profile
+                  <NavLink to="/cart" onClick={toogleClose}>
+                  Cart
                   </NavLink>
                   <NavLink to="/aboutus" onClick={toogleClose}>
                     About Us
-                  </NavLink>
-                  <NavLink to="/cart" onClick={toogleClose}>
-                    Cart
                   </NavLink>
                 </div>
               </Container>
@@ -91,10 +88,10 @@ function NavTop() {
                 </Nav.Link>
                 <Nav.Link className="">
                   <NavLink
-                    to="/Profile"
+                    to="/cart"
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
-                    Profile
+                    Cart
                   </NavLink>
                 </Nav.Link>
                 <Nav.Link>
@@ -103,14 +100,6 @@ function NavTop() {
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
                     About Us
-                  </NavLink>
-                </Nav.Link>
-                <Nav.Link className="">
-                  <NavLink
-                    to="/cart"
-                    className={({ isActive }) => (isActive ? "active" : "")}
-                  >
-                    Cart
                   </NavLink>
                 </Nav.Link>
               </Nav>

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useMutation } from "@apollo/client";
 import { useNavigate } from 'react-router-dom';
 import { LOGIN_USER } from '../utils/mutations';
-import Auth from "../utils/auth";
+import AuthService from "../utils/auth";
 
 //import './Login.css';//
 const Login = () => {
@@ -11,7 +11,7 @@ const Login = () => {
     const navigate = useNavigate();
     const [login, { error, data }] = useMutation(LOGIN_USER);
 useEffect(()=>{
-  if(Auth.loggedIn()|| data){
+  if(AuthService.loggedIn()|| data){
     navigate('/')
   }
 
@@ -21,11 +21,10 @@ useEffect(()=>{
       event.preventDefault();
       try {
         const { data } = await login({
-          variables: {email: email, password: password}}); 
-  
-
-        Auth.login(data.login.token);
-        
+          variables: {email, password}
+        }); 
+        AuthService.login(data.login.token);
+        navigate('/Home');
       } catch (error) {
         console.error('Login failed:', error);
       }
@@ -52,14 +51,14 @@ useEffect(()=>{
                         type="email" 
                         placeholder="Email" 
                         value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        onChange={(event) => setEmail(event.target.value)}
                     />
                     <input
                         className="Input"
                         type="password"
                         placeholder="Password"
                         value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        onChange={(event) => setPassword(event.target.value)}
                     />
                     <button className="LoginButton" type="submit">LOG IN</button>
                 </form>

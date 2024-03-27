@@ -15,14 +15,15 @@ type Product {
 }
 
 type Auth {
-    token: ID
+    token: ID!
     user: User
   }
 
 type Query {
-    users: [User]!
-    user(_id: ID!): User
+    users: [User]
+    user(username: String!): User
     products: [Product]!
+    me: User
 }
 
 type Mutation {
