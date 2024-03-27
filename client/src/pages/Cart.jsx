@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import img1 from '../assets/Prodimg1.png';
 import img2 from '../assets/Prodimg2.png';
 import '../CSS/Cart.css';
@@ -10,7 +10,7 @@ const Cart = () => {
       <Container fluid className="cart-wrapper">
           <div className="header">
               <h3>Cart</h3>
-              <div className="cart"><FontAwesomeIcon icon="fa-solid fa-cart-shopping" /><p id="count">2</p></div>
+              <div className="cart"><FontAwesomeIcon icon={faCartShopping} /><p id="count">2</p></div>
           </div>
           <div className="container">
               <div id="cartroot"></div>
