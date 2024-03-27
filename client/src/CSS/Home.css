@@ -1,17 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap');
 
 :root {
-    ff-primary: 'Titan One', san-serif;
-    ff-text: 'Montserrat', san-serif;
+    --ff-primary: 'Titan One', san-serif;
+    --ff-text: 'Montserrat', san-serif;
 
-    clr-neutral-000: white;
-    clr-neutral-300: hsl(0, 0%, 90%);
-    clr-neutral-450: hsl(0, 0%, 70%);
-    clr-neutral-600: hsl(0, 0%, 40%);
-    clr-neutral-900: black;
-    clr-bg: hsl(150, 39%, 71%); /* soft mint green for main background color*/
-    clr-cta: hsl(208, 55%, 80%); /*soft blue for buttons*/
-    clr-section-bg: hsl(202, 64%, 79%); /* light blue for sectioned backgrounds */
-    clr-alert: hsl(274, 76%, 58%); /* striking purple for alert notifs*/
+    --clr-neutral-000: white;
+    --clr-neutral-300: hsl(0, 0%, 90%);
+    --clr-neutral-450: hsl(0, 0%, 70%);
+    --clr-neutral-600: hsl(0, 0%, 40%);
+    --clr-neutral-900: black;
+    --clr-bg: hsl(150, 39%, 71%); /* soft mint green for main background color*/
+    --clr-cta: hsl(208, 55%, 80%); /*soft blue for buttons*/
+    --clr-section-bg: hsl(202, 64%, 79%); /* light blue for sectioned backgrounds */
+    --clr-alert: hsl(274, 76%, 58%); /* striking purple for alert notifs*/
 }
 
+.reviewSection > ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.review {
+    list-style: none;
+    font-family: var(--ff-text);
+    background-color: var(--clr-bg);
+    border-radius: 10px;
+    border: 2px solid var(--clr-cta);
+    width: 30vw;
+}
+
+.review > span {
+    font-weight: bold;
+    font-size: 20px;
+}
