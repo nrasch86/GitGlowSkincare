@@ -3,6 +3,7 @@ import { useMutation } from "@apollo/client";
 import { useNavigate } from 'react-router-dom';
 import { LOGIN_USER } from '../utils/mutations';
 import AuthService from "../utils/auth";
+import '../CSS/Login.css'
 
 //import './Login.css';//
 const Login = () => {

@@ -5,8 +5,8 @@ const ProductList = () => {
     //     return <h3>No Products Yet</h3>;
     return (
         <div>
-            <h3>Our Products:</h3>
             <div>
+                <img src="" alt="" />
                 <div>
                     <p>Product Description</p>
                 </div>
