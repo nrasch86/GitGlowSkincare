@@ -15,3 +15,4 @@ module.exports = async (modelName, collectionName) => {
     throw err;
   }
 }
+ 
