@@ -1,0 +1,27 @@
+[
+  {
+    "username": "echang",
+    "email": "echang@gmail.com",
+    "password": "echang123"
+  },
+  {
+    "username": "klomidze",
+    "email": "klomidze@gmail.com",
+    "password": "klomidze123"
+  },
+  {
+    "username": "nrasch",
+    "email": "nrasch@gmail.com",
+    "password": "nrasch123"
+  },
+  {
+    "username": "jgarcia",
+    "email": "jgarcia@gmail.com",
+    "password": "jgarcia123"
+  },
+  {
+    "username": "admin",
+    "email": "admin@gmail.com",
+    "password": "admin123"
+  }
+]

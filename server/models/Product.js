@@ -16,12 +16,6 @@ const productSchema = new Schema({
     required: true,
     min: 0.99,
   },
-  reviews: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'Review',
-    },
-  ],
 });
 
 const Product = model('Product', productSchema);
