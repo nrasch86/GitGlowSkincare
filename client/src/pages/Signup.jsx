@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../CSS/Signup.css";
 
 const Signup = () => {
   // State variables to store form data
@@ -56,7 +57,7 @@ const Signup = () => {
   };
 
   return (
-    <div>
+    <div className="signup-container">
       <h2>Sign Up</h2>
       {/* Main form for name, email, and phone number */}
       <form onSubmit={handleSubmit}>
@@ -69,7 +70,7 @@ const Signup = () => {
           <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} required />
         </div>
         <div>
-          <label htmlFor="phoneNumber">Phone Number:</label>
+          <label htmlFor="phoneNumber">Phone:</label>
           <input type="tel" id="phoneNumber" name="phoneNumber" value={formData.phoneNumber} onChange={handleInputChange} required />
         </div>
         <button type="button" onClick={() => setAddressFormOpen(true)}>Next</button>
