@@ -96,6 +96,12 @@ i#normal {
     color: var(--second-color);
 }
 
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
 @media (max-width: 992px) {
     .navtop-list {
         display: none !important;
