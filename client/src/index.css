@@ -1,1 +1,22 @@
-/* The base CSS file, with resets or global styles.*/
+:root {
+    --first-color: #ffffff;
+    --second-color: #a1d4f2;
+    --third-color: #e8c8a3;
+    --fourth-color: #eb8686;
+    --five-color: #faa7f6;
+    --six-color: #000000;
+    --seventh-color: #6b696b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--first-color);
+}
+
+
+
