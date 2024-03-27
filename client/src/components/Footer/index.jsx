@@ -1,10 +1,11 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import "../Footer/index.css"
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer-container">
       <div className="social-links">
         <a href="https://twitter.com/GitGlowSkinCare" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTwitter} className="twitter-icon" />
@@ -14,7 +15,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="brand">
-        GitGlow Skincare est. 2024
+        GitGlow Skincare est. 2024.
       </div>
     </footer>
   );

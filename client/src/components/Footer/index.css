@@ -1,5 +1,25 @@
-.footer-container{
+footer{
     background-color: #a1d4f2;
-    padding:30px;
     margin-top: 50px;
+    padding:50px;
 }
+
+.brand{
+    display: flex;
+    justify-content: center;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.instagram-icon{
+    padding: 10px;
+}
+
+.twitter-icon{
+    padding: 10px;
+}
+
