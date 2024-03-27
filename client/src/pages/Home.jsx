@@ -4,7 +4,6 @@ import ProductList from "../components/ProductList";
 import ProductReviews from "../components/ProductReviews";
 // import { QUERY_PRODUCTS } from "..utils/queries";
 // import { QUERY_REVIEWS } from "..utils/queries";
-import dropper from "../assets/blue_dropper_product.png"
 
 const Home = () => {
   const loading = false;
@@ -21,7 +20,7 @@ const Home = () => {
               <p>SALE</p>
             </div>
             <div className="productGrid">
-              <div /* className = 'product shot grid' */><img src={dropper} alt=""></img></div>
+              <div /* className = 'product shot grid' */><img src="./" alt=""></img></div>
               <div /* className = 'product shot grid' */><img src="./" alt=""></img></div>
               <div /* className = 'product shot grid' */><img src="./" alt=""></img></div>
               <div /* className = 'product shot grid' */><img src="./" alt=""></img></div>
@@ -29,9 +28,9 @@ const Home = () => {
             <div className="magazineLogo">
               <ul>
                 <li>
-                  <img src="./assets/" alt="randomMagazine 1" />
+                  {/* <img src="./assets/" alt="randomMagazine 1" />
                   <img src="" alt="randomMagazine 2" />
-                  <img src="" alt="randomMagazine 3" />
+                  <img src="" alt="randomMagazine 3" /> */}
                 </li>
               </ul>
             </div>
