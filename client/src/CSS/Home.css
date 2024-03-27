@@ -19,6 +19,7 @@
 .banner {
     background-color: var(--clr-bg);
     height: 10vw;
+    margin-top: 20px;
 }
 
 .banner > h1 {
@@ -26,6 +27,8 @@
     font-family: var(--ff-primary);
     color: var(--clr-neutral-900);
     text-align: center;
+    padding:50px;
+    font-weight:200;
 }
 
 .productGrid {
@@ -46,6 +49,7 @@
 }
 
 .prodimg > img {
+<<<<<<< HEAD
     width: 20vw;
 }
 
@@ -63,6 +67,10 @@
 
 #grid4 {
     grid-area: 4;
+=======
+    width: 15vw;
+    border-radius: 15px;
+>>>>>>> acf0ffc4e4805fe35095be4ee90700bc1d50a593
 }
 
 .reviewSection > ul {
