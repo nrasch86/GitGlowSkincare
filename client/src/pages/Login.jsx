@@ -1,6 +1,9 @@
-import { useState, useEffect, useMutation } from 'react';
+import { useState, useEffect } from 'react';
+import { useMutation } from "@apollo/client";
 import { useNavigate } from 'react-router-dom';
-import { LOGIN_USER } from '../utils/mutations'
+import { LOGIN_USER } from '../utils/mutations';
+import Auth from "../utils/auth";
+
 //import './Login.css';//
 const Login = () => {
     const [email, setEmail] = useState(''); 
@@ -58,7 +61,7 @@ useEffect(()=>{
                     />
                     <button className="LoginButton" type="submit">LOG IN</button>
                 </form>
-                <button className="SignUpButton" onClick={navigateToSignup}>SIGN UP</button>
+                <button className="SignUpButton" onClick={navigateToRegister}>SIGN UP</button>
             </div>
         </div>
     );
