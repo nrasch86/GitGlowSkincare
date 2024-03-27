@@ -2,8 +2,6 @@ const { GraphQLError } = require("graphql");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 
-require("dotenv").config();
-
 module.exports = {
   AuthenticationError: new GraphQLError("Could not authenticate user.", {
     extensions: {

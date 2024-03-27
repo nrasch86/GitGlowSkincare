@@ -2,7 +2,7 @@ import { Container } from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 //import {fa-cart-shopping} from '@fortawesome/free-solid-svg-icons';
 import '../CSS/Cart.css'
-import './addtocart'
+import ProductPage from './ProductPage'
 
 
 const Cart = () => {
@@ -14,7 +14,9 @@ const Cart = () => {
    </div>
 </div>
 <div class = "container">
-    <div id= "cartroot"></div>
+    <div id= "cartroot">
+        <ProductPage />
+    </div>
     <div class= 'sidebar'>
         <div class="head"><p>My Cart</p></div>    
         <div id= "cartItem">Your cart is empty</div>
