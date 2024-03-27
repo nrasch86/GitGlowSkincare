@@ -1,6 +1,9 @@
-import { useState, useEffect, useMutation } from 'react';
+import { useState, useEffect } from 'react';
+import { useMutation } from "@apollo/client";
 import { useNavigate } from 'react-router-dom';
-import { LOGIN_USER } from '../utils/mutations'
+import { LOGIN_USER } from '../utils/mutations';
+import Auth from "../utils/auth";
+
 //import './Login.css';//
 const Login = () => {
     const [email, setEmail] = useState(''); 
@@ -14,12 +17,13 @@ useEffect(()=>{
 
 }, [data, navigate])
 
-    const handleLogin = async (e) => {
-      e.preventDefault();
-
+    const handleLogin = async (event) => {
+      event.preventDefault();
       try {
-        const { data } = await login({variables: {email: email, password: password}}); 
- 
+        const { data } = await login({
+          variables: {email: email, password: password}}); 
+  
+
         Auth.login(data.login.token);
         
       } catch (error) {
@@ -27,6 +31,7 @@ useEffect(()=>{
       }
     };
   
+    
     const navigateToRegister = () => {
       navigate('/Signup');
     };
@@ -58,7 +63,7 @@ useEffect(()=>{
                     />
                     <button className="LoginButton" type="submit">LOG IN</button>
                 </form>
-                <button className="SignUpButton" onClick={navigateToSignup}>SIGN UP</button>
+                <button className="SignUpButton" onClick={navigateToRegister}>SIGN UP</button>
             </div>
         </div>
     );

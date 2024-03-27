@@ -1,7 +1,4 @@
 //**The main React component that includes the routing logic. */
-import { Route, Routes } from "react-router-dom";
-import { useState } from "react";
-import { Spinner } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
 import {
   ApolloClient,
@@ -34,7 +31,10 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-function App() {
+const App = () => {
+
+
+  
   return (
     <ApolloProvider client={client}>
     <div>

@@ -41,6 +41,9 @@ function NavTop() {
                   <NavLink to="/aboutus" onClick={toogleClose}>
                     About Us
                   </NavLink>
+                  <NavLink to="/cart" onClick={toogleClose}>
+                    Cart
+                  </NavLink>
                 </div>
               </Container>
             </div>
@@ -100,6 +103,14 @@ function NavTop() {
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
                     About Us
+                  </NavLink>
+                </Nav.Link>
+                <Nav.Link className="">
+                  <NavLink
+                    to="/cart"
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                  >
+                    Cart
                   </NavLink>
                 </Nav.Link>
               </Nav>

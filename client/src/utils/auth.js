@@ -1,26 +1,39 @@
-//Functions related to authentication (login, logout, etc.).
-import decode from 'jwt-decode';
 
+// use this to decode a token and get the user's information out of it
+import {jwtDecode} from 'jwt-decode';
+
+// create a new class to instantiate for a user
 class AuthService {
-  getProfile() {
-    return decode(this.getToken());
+  // get user data from JSON web token by decoding it
+  getUser() {
+    const token = this.getToken();
+    try { 
+      const decoded = jwtDecode(token);
+      return decoded;
+    } catch (error) {
+
+      console.error('Error decoding token:', error);
+
+      return null;
+    }
   }
 
+  // return `true` or `false` if token exists (does not verify if it's expired yet)
   loggedIn() {
-    // Checks if there is a saved token and it's still valid
     const token = this.getToken();
-    return !!token && !this.isTokenExpired(token);
+    return token && !this.isTokenExpired(token) ? true : false;
   }
 
   isTokenExpired(token) {
-    try {
-      const decoded = decode(token);
-      if (decoded.exp < Date.now() / 1000) {
-        return true;
-      } else return false;
-    } catch (err) {
-      return false;
+    // Decode the token to get its expiration time that was set by the server
+    const decoded = jwtDecode(token);
+    // If the expiration time is less than the current time (in seconds), the token is expired and we return `true`
+    if (decoded.exp < Date.now() / 1000) {
+      localStorage.removeItem('id_token');
+      return true;
     }
+    // If token hasn't passed its expiration time, return `false`
+    return false;
   }
 
   getToken() {
@@ -29,17 +42,16 @@ class AuthService {
   }
 
   login(idToken) {
-    // Saves user token to localStorage
+    // Saves user token to localStorage and reloads the application for logged in status to take effect
     localStorage.setItem('id_token', idToken);
-
-    window.location.assign('/');
+    window.location.assign('/dashboard');
   }
 
   logout() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
     // this will reload the page and reset the state of the application
-    window.location.assign('/');
+    window.location.reload();
   }
 }
 
