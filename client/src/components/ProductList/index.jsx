@@ -13,7 +13,7 @@ const ProductList = ({ products, productName }) => {
                 <p>{product.description}</p>
               </div>
               <Link
-                to={`/thoughts/${product._id}`}
+                to={`/products/${product._id}`}
               >
                 
               </Link>
