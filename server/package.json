@@ -4,10 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "npm run seedProduct && npm run seedUser && node server.js",
+    "start": "npm run seed && node server.js",
     "watch": "nodemon",
-    "seedProduct": "node seeders/product-seed.js",
-    "seedUser": "node seeders/profile-seed.js"
+    "seed": "node seeders/seed.js"
+  
   },
   "keywords": [],
   "author": "",
