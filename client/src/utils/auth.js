@@ -6,10 +6,8 @@ import {jwtDecode} from 'jwt-decode';
 class AuthService {
   // get user data from JSON web token by decoding it
   getUser() {
-    const token = this.getToken();
     try { 
-      const decoded = jwtDecode(token);
-      return decoded;
+      return jwtDecode(this.getToken());
     } catch (error) {
 
       console.error('Error decoding token:', error);
@@ -44,7 +42,7 @@ class AuthService {
   login(idToken) {
     // Saves user token to localStorage and reloads the application for logged in status to take effect
     localStorage.setItem('id_token', idToken);
-    window.location.assign('/dashboard');
+    window.location.assign('/');
   }
 
   logout() {

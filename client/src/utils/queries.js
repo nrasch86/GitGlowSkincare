@@ -26,21 +26,11 @@ query singleProduct($productId: ID!) {
 `;
 
 export const QUERY_USER = gql`
-{ 
-    user {
-firstName
-lastName
-orders {
-    _id
-    products {
-        _id
-        name
-        description
-        price
-        quantity
-        image
+  query user($username: String!) {
+    user(username: $username) {
+      _id
+      username
+      email
     }
-   }
   }
- }
 `;
