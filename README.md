@@ -16,10 +16,10 @@ Introducing GitGlow: Your coding ally for healthy, glowing skin. Dive into our c
 - Render Deployment
 
 ## Technologies Used
--JWT Authorizaion
--Interactive React UI
--MongoDB Atlas Cloud Database
--Render Deployment
+- JWT Authorizaion
+- Interactive React UI
+- MongoDB Atlas Cloud Database
+- Render Deployment
 
 
 ## Installation
@@ -27,10 +27,10 @@ Introducing GitGlow: Your coding ally for healthy, glowing skin. Dive into our c
 To run this application locally:
 
 - Clone the repository
--Open up an integrated terminal from the root directory
--Run "npm install"
--Run "npm run develop"
-Enjoy!
+- Open up an integrated terminal from the root directory
+- Run "npm install"
+- Run "npm run develop"
+- Enjoy!
 
 
 ## Deployment
