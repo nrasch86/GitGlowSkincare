@@ -12,9 +12,8 @@ Introducing GitGlow: Your coding ally for healthy, glowing skin. Dive into our c
 
 ## Features
 - Account Creation
-- Interactive UI
-- 
--Render Deployment
+- Interactive UI 
+- Render Deployment
 
 ## Technologies Used
 -JWT Authorizaion
